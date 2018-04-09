@@ -1,0 +1,180 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 信息显示 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/background_dark">
+        <EditText
+            android:id="@+id/info_tv_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|bottom"
+            android:textSize="50sp"
+            android:singleLine="true"
+            android:focusableInTouchMode="false"
+            android:textIsSelectable="true"
+            android:background="@android:color/background_dark"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@android:color/background_dark">
+        <TextView 
+            android:id="@+id/mark_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|bottom"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            />
+        <TextView 
+            android:id="@+id/info_tv_bottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="end|bottom"
+            android:textSize="50sp"
+            android:textColor="@android:color/white"
+            android:textIsSelectable="true"
+            android:singleLine="true"
+            android:maxLength="10"
+            />
+    </LinearLayout>
+    <!-- 按钮区域 -->
+    <GridLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:rowCount="5"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@drawable/background_main">
+        <!-- 第一排 -->
+        <Button 
+            android:id="@+id/C_btn"
+            android:layout_rowWeight="1" 
+            android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100" 
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:layout_gravity="fill"
+            android:text="C"/>
+        <Button 
+            android:id="@+id/divide_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:text="/"/>
+        <Button 
+            android:id="@+id/ride_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:text="*"/>
+        <Button 
+            android:id="@+id/back_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:text="←"/>
+        <!-- 第二排 -->
+        <Button 
+            android:id="@+id/seven_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:text="7"/>
+        <Button 
+            android:id="@+id/eight_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:layout_gravity="fill"
+            android:text="8"/>
+        <Button 
+            android:id="@+id/night_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:layout_gravity="fill"
+            android:text="9"/>
+        <Button 
+            android:id="@+id/minus_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:text="-"/>
+        <!-- 第三排 -->
+        <Button 
+            android:id="@+id/four_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:layout_gravity="fill"
+            android:text="4"/>
+        <Button 
+            android:id="@+id/five_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:layout_gravity="fill"
+            android:text="5"/>
+        <Button 
+            android:id="@+id/six_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:layout_gravity="fill"
+            android:text="6"/>
+        <Button 
+            android:id="@+id/add_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:layout_gravity="fill"
+            android:text="+"/>
+        <!-- 第四排 -->
+        <Button 
+            android:id="@+id/one_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:text="1"/>
+        <Button 
+            android:id="@+id/two_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:layout_gravity="fill"
+            android:text="2"/>
+        <Button 
+            android:id="@+id/three_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:layout_gravity="fill"
+            android:text="3"/>
+        <Button 
+            android:id="@+id/equals_btn"
+            android:layout_rowWeight="2" android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:text="＝"/>
+        <!-- 第五排 -->
+        <Button 
+            android:id="@+id/zero_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_columnWeight="2"  android:background="@drawable/btn_default"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="0"/>
+        <Button 
+            android:id="@+id/dot_btn"
+            android:layout_rowWeight="1"  android:textColor="@android:color/white" android:textSize="30sp" android:alpha="100"
+            android:layout_columnWeight="1" android:background="@drawable/btn_default"
+            android:layout_gravity="fill"
+            android:text="."/>
+    </GridLayout>
+</LinearLayout>
