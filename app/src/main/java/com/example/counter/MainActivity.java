@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+//	新添加的注释
 public class MainActivity extends Activity implements View.OnClickListener {
 	private Button one_btn,two_btn,three_btn,four_btn,five_btn,six_btn,seven_btn;
 	private Button eight_btn,night_btn,zero_btn,add_btn,minus_btn,ride_btn,divide_btn;
